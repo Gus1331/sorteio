@@ -14,10 +14,99 @@
     --color4: rgb(187, 032, 032);
     --color5: rgb(018, 019, 023);
 }
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
 
 
+body{
+    background-color: var(--color1);
+    font-family: var(--textt);
+}
 
 
+div#options{
+    position: fixed;
+    display: inline-block;
+    height: 100vh;
+    width: 90px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-right: 5px solid rgb(000, 000, 000);
+}
+
+
+main{
+    background-color: var(--color2);
+    margin: 20px 30px 0 120px;
+    border-radius: 2px;
+    box-shadow: 10px 10px 5px rgba(000, 000, 000, 0.733);
+}
+h1{
+    padding: 10px;
+    font-family: var(--title);
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+hr{
+    box-shadow: none;
+    border: none;
+    background-color: rgb(000, 000, 000);
+    height: 5px;
+}
+div#display{
+    background-color: rgb(255, 255, 255);
+    font-family: var(--numbr);
+    text-shadow: 0 0 15px var(--color2);
+    margin: 15px;
+    padding: 30px;
+    font-size: 5em;
+    border-radius: 3px;
+}
+
+button{
+    background-color: var(--color4);
+    color: var(--color3);
+    width: 200px;
+    height: 75px;
+    font-size: 2.5em;
+    border-radius: 25px;
+    box-shadow: none;
+    box-shadow: inset -4px -4px 1px rgba(000, 000, 000, 0.466);
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.658);
+    transition: 0.2s;
+    margin: 10px auto 20px auto;
+}
+button:active{
+    box-shadow: inset 2px 2px 1px rgba(000, 000, 000, 0.466);
+    border: 2.5px solid rgb(27, 27, 27);
+    padding-left: 4px;
+    padding-top: 4px;
+    transition: 0.05s;
+}
+h2{
+    border-bottom: 2px dashed var(--color1);
+    width: 50%;
+    margin: 10px auto 20px auto;
+
+}
+div#historic{
+    display: inline-block;
+    text-align: left;
+    background-color: var(--color3);
+    min-height: 50px;
+    height: 100px;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    padding: 2px 5px;
+    border: 2px solid rgba(73, 0, 0, 0.212);
+    border-radius: 5px;
+}
 
 
 
