@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); /*      title */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap'); /* text */
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); /*               number */
+
+:root{
+    --title: 'Abril Fatface', Verdana , cursive;
+    --textt: 'Open Sans', Arial, sans-serif;
+    --numbr: 'Gugi', 'Times New Roman', monospaced;
+
+    --color1: rgb(006, 017, 028);
+    --color2: rgb(190, 199, 199);
+    --color3: rgb(255, 235, 077);
+    --color4: rgb(187, 032, 032);
+    --color5: rgb(018, 019, 023);
+}
+
+
+
+
+
+
+
+
+
+
+
