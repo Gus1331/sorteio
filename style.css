@@ -57,13 +57,22 @@ div#icon > hr{
 div#opcontent{
     display: none;
     position: relative;
-    top: 10px;
-    left: 0;
-    width: 300px;
+    top: 80px;
+    left: 20px;
+    width: 90%;
+    height: 70%;
     padding-left: 10px;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
-
+    background-color: red;
+}
+p#madeby{
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 div#credits{
     position: absolute;
@@ -141,8 +150,7 @@ div#historic{
     display: inline-block;
     text-align: left;
     background-color: var(--color3);
-    min-height: 50px;
-    height: 100px;
+    min-height: 100px;
     width: 90%;
     margin: 0 auto 20px auto;
     padding: 2px 5px;

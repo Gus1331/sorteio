@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="sript.js"></script>
+    <script defer src="script.js"></script>
     <title>Sorteador</title>
 </head>
 
@@ -16,10 +16,10 @@
     <div id="options">
 
         <!-- Botão de opções -->
-        <div id="icon">
-            <hr>
-            <hr>
-            <hr>
+        <div onclick="opOpen()" id="icon" onmouseover="hoverIconOn()" onmouseout="hoverIconOut()">
+            <hr class="led">
+            <hr class="led">
+            <hr class="led">
         </div>
 
         <!-- Conteúdo opções -->
@@ -29,6 +29,7 @@
 
         <!-- Créditos -->
         <a href="https://github.com/Gus1331" target="_blank">
+            <p id="madeby">Criador:</p>
             <div id="credits">
                 G
             </div>
@@ -43,10 +44,10 @@
         <hr id="mainhr">
         <div id="display">00</div>
 
-        <button>Sortear</button>
+        <button onclick="sort()">Sortear</button>
 
         <h2>Números Sorteados</h2>
-        <div id="historic"></div>
+        <div id="historic">00</div>
 
     </main>
 
