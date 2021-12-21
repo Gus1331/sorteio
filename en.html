@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
-    <title>Sorteador</title>
+    <title>Lottery</title>
 
 </head>
 
@@ -25,15 +25,15 @@
 
         <!-- Conteúdo opções -->
         <div id="opcontent">
-            </a><p><a href="en.html"><img id="small" src="imgs/en.ico"> English</a></p>
-            <p><a href="#"><img src="imgs/pt.ico"> Português</a></p>
-            <button class="optog" onclick="clearH()">Limpar Histórico</button>
-            <button class="optog" onclick="toggleH()">Esconder Histórico</button>
+            </a><p><a href="#"><img id="small" src="imgs/en.ico"> English</a></p>
+            <p><a href="index.html"><img src="imgs/pt.ico"> Português</a></p>
+            <button class="optog" onclick="clearH()">Clean History</button>
+            <button class="optog" onclick="toggleHen()">Hide History</button>
         </div>
 
         <!-- Créditos -->
-        <a href="https://github.com/Gus1331" target="_blank">
-            <p id="madeby">Criador:</p>
+        <a href="https://github.com/Gus1331" target="_blank" rel="author">
+            <p id="madeby">Made by:</p>
             <div id="credits">
                 G
             </div>
@@ -43,14 +43,14 @@
 
     <main>
 
-        <h1>Sorteador de Números</h1>
+        <h1>Number picker</h1>
 
         <hr id="mainhr">
         <div id="display">00</div>
 
-        <button id="mainbtn" onclick="sort()">Sortear</button>
+        <button id="mainbtn" onclick="sort()">Draw</button>
 
-        <h2>Números Sorteados</h2>
+        <h2>Lucky history</h2>
         <div id="historic">00</div>
 
     </main>

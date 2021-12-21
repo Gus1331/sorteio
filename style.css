@@ -43,8 +43,13 @@ div#icon{
     transform: translateX(-50%);
     left: 50%;
     top: 10px;
-    height: 45px;
-    width: 45px;
+    height: 53px;
+    width: 52px;
+    padding: 4px;
+}
+div#icon:active{
+    background-color: rgba(253, 253, 253, 0.199);
+    border-radius: 5px;
 }
 div#icon > hr{
     box-shadow: inset 0 -3px 3px rgba(2, 2, 58, 0.295);
@@ -63,8 +68,40 @@ div#opcontent{
     height: 70%;
     padding-left: 10px;
     box-sizing: border-box;
+}
+#opcontent > p{
+    text-align: left;
+    margin-bottom: 5px;
+}
+#opcontent > p > a {
+    text-decoration: none;
+    cursor: pointer;
     color: rgb(255, 255, 255);
-    background-color: red;
+}
+a > img{
+    height: 16px;
+}
+img#small{
+    height: 26px;
+    transform: translateY(5px);
+}
+button.optog{
+    display: block;
+    width: 140px;
+    height: 25px;
+    padding: 5px;
+    line-height: 70%;
+    background-color: var(--color4);
+    margin-bottom: 5px;
+    color: var(--color3);
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 2px rgba(000, 000, 000, 0.466);
+    transition: 0.2s;
+    text-align: left;
+}
+.optog:active{
+    box-shadow: inset 2px 2px 2px rgba(000, 000, 000, 0.466);
+    border: 2.5px solid rgb(0, 0, 0);
 }
 p#madeby{
     display: none;
@@ -81,13 +118,16 @@ div#credits{
     bottom: 10px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    line-height: 1.2em;
+    border-radius: 50px;
+    line-height: 1.05em;
     color: var(--color4);
     font-size: 2.9em;
     font-weight: bolder;
     text-align: center;
     text-shadow: 0 0 3px var(--color4);
+}
+div#credits:active{
+    background-color: rgba(247, 122, 122, 0.158);
 }
 
 
@@ -120,7 +160,7 @@ div#display{
     border-radius: 3px;
 }
 
-button{
+button#mainbtn{
     background-color: var(--color4);
     color: var(--color3);
     width: 200px;
@@ -133,7 +173,7 @@ button{
     transition: 0.2s;
     margin: 10px auto 20px auto;
 }
-button:active{
+button#mainbtn:active{
     box-shadow: inset 2px 2px 1px rgba(000, 000, 000, 0.466);
     border: 2.5px solid rgb(27, 27, 27);
     padding-left: 4px;

@@ -1,6 +1,7 @@
 
 
 let buttn = document.getElementsByTagName("button")[0];
+let h2his = document.getElementsByTagName("h2")[0];
 let displ = document.getElementById("display");
 let histo = document.getElementById("historic");
 let opbar = document.getElementById("options");
@@ -9,12 +10,13 @@ let opcnt = document.getElementById("opcontent");
 let opbby = document.getElementById("madeby");
 let opgus = document.getElementById("credits");
 
+let optog = document.getElementsByClassName("optog")[1];
 let led01 = document.getElementsByClassName("led")[0];
 let led02 = document.getElementsByClassName("led")[1];
 let led03 = document.getElementsByClassName("led")[2];
 
 let open = false
-
+let togl = false
 
 function sort (){
 
@@ -45,7 +47,7 @@ function opOpen(){
             opbtn.style.left = "8.7%";
             opgus.style.left = "8.7%";
             opgus.innerText = "Gustavo Oliveira";
-            opgus.style.width = "100%";
+            opgus.style.width = "75%";
             opgus.style.textAlign = "left"
             opgus.style.transform = "translateX(0)"
             opbby.style.display = "block";
@@ -60,6 +62,7 @@ function opOpen(){
                 opbtn.style.left = "50%";
                 opgus.style.left = "50%";
                 opgus.innerText = "G";
+                opgus.style.width = "50px";
                 opgus.style.textAlign = "center"
                 opgus.style.transform = "translateX(-50%)"
                 opbby.style.display = "none"
@@ -81,3 +84,44 @@ function hoverIconOut(){
     led02.style.boxShadow = "inset 0 -3px 3px rgba(2, 2, 58, 0.295)"
     led03.style.boxShadow = "inset 0 -3px 3px rgba(2, 2, 58, 0.295)"
 }
+
+function clearH(){
+    histo.innerText = "00"
+}
+
+function toggleH(){
+switch(togl){
+    case true :
+        histo.style.display = "inline-block";
+        h2his.style.display = "block";
+        optog.innerText = "Esconder Histórico"
+        togl = false;
+        break ;
+    case false :
+        histo.style.display = "none";
+        h2his.style.display = "none";
+        optog.innerText = "Mostrar histórico"
+        togl = true;
+        break;
+    }
+}
+
+// English Version
+function toggleHen(){
+    switch(togl){
+        case true :
+            histo.style.display = "inline-block";
+            h2his.style.display = "block";
+            optog.innerText = "Hide History"
+            togl = false;
+            break ;
+        case false :
+            histo.style.display = "none";
+            h2his.style.display = "none";
+            optog.innerText = "Show History"
+            togl = true;
+            break;
+        }
+    }
+
+console.log("Feito por (Made by):\nGustavo Oliveira\n\n  Visit my GitHub: https://github.com/Gus1331")
