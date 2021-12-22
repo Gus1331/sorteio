@@ -41,10 +41,10 @@ div#options{
 div#icon{
     position: absolute;
     transform: translateX(-50%);
-    left: 50%;
     top: 10px;
-    height: 53px;
+    left: 50%;
     width: 52px;
+    height: 53px;
     padding: 4px;
 }
 div#icon:active{
@@ -200,7 +200,53 @@ div#historic{
 
 
 
+/* Responsividade */
+@media screen and (max-width:720px){
+    body{
+        background-color: ;
+    }
 
 
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+}
 
+
+@media screen and (max-width: 550px){
+    body{
+        background-color: ;
+    }
+
+    main{
+        margin-left: 86px;
+        margin-right: 0;
+        margin-top: -10px;
+    }
+    h1{
+        font-size: 1.7em;
+    }
+    div#display{
+        line-height: 2em;
+    }
+    div#credits{
+        font-size: 2em;
+    }
+    div#historic{
+        min-height: 70px;
+    }
+
+    @media screen and (min-height:700px) {
+        div#historic{
+            min-height: 130px;
+        }
+        div#display{
+            font-size: 7em;
+            line-height: 1.8em;
+        }
+    }
+}
 
